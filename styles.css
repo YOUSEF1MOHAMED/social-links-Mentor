@@ -1,0 +1,111 @@
+/* Reset some basic styles */
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: #333333;
+  --Grey-800: #1f1f1f;
+  --Grey-900: #141414;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--Grey-900);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  padding: 15px;
+}
+
+.card {
+  background-color: var(--Grey-800);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.location {
+  color: var(--Green);
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+
+.bio {
+  font-size: 13px;
+  padding: 0px 15px;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.links .button {
+  display: block;
+  background-color: var(--Grey-700);
+  color: var(--White);
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.links .button:hover {
+  background-color: var(--Green);
+}
+.links .button:hover{
+  color: var(--Grey-900);
+}
+
+/* Responsive tweaks */
+@media (max-width: 375px) {
+  .card {
+    padding: 25px 20px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
+.attribution {
+  position: absolute;
+  bottom: 20px;
+}
